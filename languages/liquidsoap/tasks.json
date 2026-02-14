@@ -1,0 +1,12 @@
+[
+  {
+    "label": "run current file",
+    "command": "liquidsoap",
+    "args": ["$ZED_FILE"]
+  },
+  {
+    "label": "run selected text",
+    "command": "liquidsoap",
+    "args": ["\"$ZED_SELECTED_TEXT\""]
+  }
+]

@@ -1,0 +1,10 @@
+# rust
+/target
+
+# zed
+/grammars
+/extension.wasm
+
+# liquidsoap
+/*.liq
+/cache

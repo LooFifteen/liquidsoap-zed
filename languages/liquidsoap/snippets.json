@@ -1,0 +1,47 @@
+{
+  "Define method": {
+    "prefix": ["def"],
+    "body": ["def $1($2) =", "  $0", "end"],
+    "description": "Define a new method."
+  },
+  "If": {
+    "prefix": ["if"],
+    "body": ["if", "  $1", "then", "  $0", "end"],
+    "description": "Create an if statement."
+  },
+  "If else": {
+    "prefix": ["ifelse", "if"],
+    "body": ["if", "  $1", "then", "  $0", "else", "  $0", "end"],
+    "description": "Create an if-else statement."
+  },
+  "If elsif": {
+    "prefix": ["elsif"],
+    "body": [
+      "if",
+      "  $1",
+      "then",
+      "  $0",
+      "elsif",
+      "  $2",
+      "then",
+      "  ",
+      "end"
+    ],
+    "description": "Create an if-elsif statement."
+  },
+  "For-i": {
+    "prefix": ["fori"],
+    "body": ["for ${1:i} = $2 to $3 do", "  $0", "end"],
+    "description": "Create a for-i loop."
+  },
+  "While": {
+    "prefix": ["while"],
+    "body": ["while $1 do", "  $0", "end"],
+    "description": "Create a while loop."
+  },
+  "Try-catch": {
+    "prefix": ["try"],
+    "body": ["try", "  $0", "catch ${1:err} do", "  ", "end"],
+    "description": "Create a try-catch statement."
+  }
+}
